@@ -24,3 +24,31 @@ Definition for a binary tree node.*/
 //   }
 //   return result;
 // }
+
+//2619. Array Prototype Last
+// declare global {
+//   interface Array<T> {
+//     last(): T | -1;
+//   }
+// }
+// Array.prototype.last = function () {
+//   if (this.length === 0) {
+//     return -1;
+//   }
+//   return this[this.length - 1];
+// };
+// const nums = [];
+// console.log(nums.last());
+
+//2620. Counter
+// function createCounter(n: number): () => number {
+//   let a = -1;
+//   return function () {
+//     a += 1;
+//     return n + a;
+//   };
+// }
+// const counter = createCounter(10);
+// console.log(counter()); // 10
+// console.log(counter()); // 11
+// console.log(counter()); // 12
